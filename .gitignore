@@ -58,3 +58,6 @@ dmypy.json
 build/
 dist/
 *.egg-info/
+
+# Large data
+/Users/weronikadorociak/Documents/LSE/MY498 Capstone Project/ai_aging/original_data/eurostat.csv
