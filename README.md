@@ -9,43 +9,6 @@ It contains all code and data transformation workflows used to clean, merge, and
 
 ---
 
-## Repository Structure
-AI_AGING/
-├── code/
-│ ├── eurostat_transformation/ # Cleaning and sectoral aggregation of Eurostat data
-│ │ ├── economic_activities_to_sectors.ipynb
-│ │ ├── eurostat_countries_and_economic_activities_gender.ipynb
-│ │ ├── eurostat_countries_and_economic_activities.ipynb
-│ │ ├── eurostat_countries.ipynb
-│ │ └── eurostat_economic_activities.ipynb
-│ ├── gen_ai_adoption/ # Semantic mapping of Anthropic AEI to sectors
-│ │ └── gen_ai_adoption_semantic_matching.ipynb
-│ └── gen_ai_potential/ # Semantic mapping of GenAI potential data
-│ └── gen_ai_potential_semantic_matching.ipynb
-│
-├── original_data/ # Unmodified input data sources
-│ ├── anthropic.csv
-│ └── gpts_are_gpts.csv
-│
-├── transformed_data/ # Cleaned, harmonized, and sector-mapped data
-│ ├── ai_adoption_sector.csv
-│ ├── ai_potential_sector.csv
-│ ├── anthropic_clean_merging.csv
-│ ├── economic_activity_sector.csv
-│ ├── eurostat_countries.csv
-│ ├── eurostat_full.csv
-│ ├── eurostat_gender_countries.csv
-│ ├── eurostat_gender_sectors.csv
-│ ├── eurostat_sectors.csv
-│ ├── gen_ai_adoption_model_disagreement_chatgpt.xlsx
-│ ├── gen_ai_potential_model_disagreement_chatgpt.xlsx
-│ └── gpts_clean_merging.csv
-│
-├── .gitignore
-└── README.md
-
----
-
 ## Purpose
 
 This repo documents:
@@ -60,6 +23,24 @@ This repo documents:
 
 ---
 
+## Contents of the Repository
+This repo includes:
+
+Raw data (excluding eurostat)
+
+Cleaning routines for:
+Eurostat Labour Force Survey (LFS)
+Anthropic Economic Index (AEI)
+GenAI exposure estimates from Eloundou et al. (2023)
+
+Metric construction scripts, including:
+Workforce aging indicators
+Semantic matching routines using sentence embedding models
+GenAI adoption scores
+GenAI potential metrics
+
+---
+
 ## Tech Stack
 
 - **Python 3.10+**
@@ -70,20 +51,9 @@ This repo documents:
 ---
 
 ## Data sources:
-Eurostat Labour Force Survey (2014–2024)
-Anthropic Economic Index (AEI)
-GPTs-are-GPTs GenAI exposure scores (Eloundou et al.)
-
----
-
-## Key Metrics Generated
-Proportion of older workers (50+) per sector & country
-Pace of aging (2014–2024 change)
-AI adoption scores (based on Anthropic task-level usage)
-GenAI potential scores (from expert-annotated β-scores)
-Sectoral and national AI gaps (potential vs. adoption)
-
----
+Eurostat Labour Force Survey (2014–2024): https://ec.europa.eu/eurostat/web/lfs
+Anthropic Economic Index (AEI): https://huggingface.co/datasets/Anthropic/EconomicIndex
+GPTs-are-GPTs GenAI exposure scores (Eloundou et al.): https://github.com/openai/GPTs-are-GPTs/
 
 ## Author
 
