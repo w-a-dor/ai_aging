@@ -51,12 +51,16 @@ GenAI potential metrics
 ---
 
 ## Data sources:
-Eurostat Labour Force Survey (2014–2024): https://ec.europa.eu/eurostat/web/lfs
-Anthropic Economic Index (AEI): https://huggingface.co/datasets/Anthropic/EconomicIndex
-GPTs-are-GPTs GenAI exposure scores (Eloundou et al.): https://github.com/openai/GPTs-are-GPTs/
+- Eurostat Labour Force Survey (2014–2024): https://ec.europa.eu/eurostat/web/lfs
+- Anthropic Economic Index (AEI): https://huggingface.co/datasets/Anthropic/EconomicIndex
+- GPTs-are-GPTs GenAI exposure scores (Eloundou et al.): https://github.com/openai/GPTs-are-GPTs/
 
 ## Author
 
 Weronika Dorociak
+
 MSc Applied Social Data Science
+
+Department of Methodology
+
 London School of Economics
